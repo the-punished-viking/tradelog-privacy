@@ -5,16 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TradeLog Privacy Policy</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.7; margin: 40px; color: #222; background-color: #fff; }
-    h1, h2, h3 { color: #004aad; }
-    a { color: #004aad; text-decoration: none; }
+    :root {
+      --accent: #004aad;
+      --text: #222;
+      --bg: #ffffff;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 1.5rem;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 900px;
+      margin-inline: auto;
+    }
+    h1, h2, h3 {
+      color: var(--accent);
+      margin-top: 1.8em;
+      margin-bottom: 0.4em;
+    }
+    h1 { text-align: center; margin-top: 0.5em; }
+    p, li { margin-bottom: 0.8em; }
+    ul { padding-left: 1.3em; }
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5em;
+      margin-bottom: 1.5em;
+    }
+    footer {
+      text-align: center;
+      border-top: 1px solid #ccc;
+      padding-top: 1em;
+      font-size: 0.9em;
+      margin-top: 2em;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e0e0e0;
+        --accent: #5ba4ff;
+      }
+      body { background: var(--bg); color: var(--text); }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> October 2025</p>
+  <header>
+    <h1>TradeLog Privacy Policy</h1>
+    <p><strong>Last updated:</strong> October 2025</p>
+  </header>
 
   <p>TradeLog (“the App”) is developed and operated by <strong>TradeLogic Studios</strong> (“we”, “our”, “us”). This Privacy Policy explains how we collect, use, and protect information when you use the TradeLog mobile application.</p>
 
@@ -93,6 +137,10 @@
   <p>For questions or requests regarding this Privacy Policy, contact us at:</p>
   <p><strong>Email:</strong> <a href="mailto:tradelogicstudios@gmail.com">tradelogicstudios@gmail.com</a><br>
   <strong>Developer:</strong> TradeLogic Studios</p>
+
+  <footer>
+    <p>&copy; 2025 TradeLogic Studios. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
